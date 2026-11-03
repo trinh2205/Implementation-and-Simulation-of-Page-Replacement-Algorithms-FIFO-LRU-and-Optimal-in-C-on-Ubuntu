@@ -141,3 +141,23 @@ int read_reference_string(ReferenceString *reference) {
 
     return 1;
 }
+
+
+/* Read algorithm selection */
+int read_algorithm_choice(int *choice) {
+
+    if (choice == NULL) {
+        return 0;
+    }
+
+    printf("\n--- ALGORITHM SELECTION ---\n");
+    printf("1. FIFO - First In First Out\n");
+    printf("2. LRU  - Least Recently Used\n");
+
+    return read_integer(
+        "Enter your choice: ",
+        1,
+        2,
+        choice
+    );
+}

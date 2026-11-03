@@ -10,4 +10,11 @@ int simulate_fifo(
     SimulationStats *stats
 );
 
+/* LRU Page Replacement Algorithm */
+int simulate_lru(
+    const ReferenceString *reference,
+    FrameSet *frames,
+    SimulationStats *stats
+);
+
 #endif

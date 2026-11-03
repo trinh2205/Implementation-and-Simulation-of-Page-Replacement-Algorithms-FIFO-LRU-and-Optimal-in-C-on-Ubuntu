@@ -7,7 +7,8 @@ TARGET = page_simulator
 SOURCES = src/main.c \
           src/input.c \
           src/simulator.c \
-          src/fifo.c
+          src/fifo.c \
+          src/lru.c
 
 HEADERS = include/simulator.h \
           include/input.h \
