@@ -8,7 +8,8 @@ SOURCES = src/main.c \
           src/input.c \
           src/simulator.c \
           src/fifo.c \
-          src/lru.c
+          src/lru.c \
+          src/optimal.c
 
 HEADERS = include/simulator.h \
           include/input.h \

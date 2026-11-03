@@ -142,7 +142,6 @@ int read_reference_string(ReferenceString *reference) {
     return 1;
 }
 
-
 /* Read algorithm selection */
 int read_algorithm_choice(int *choice) {
 
@@ -151,13 +150,15 @@ int read_algorithm_choice(int *choice) {
     }
 
     printf("\n--- ALGORITHM SELECTION ---\n");
-    printf("1. FIFO - First In First Out\n");
-    printf("2. LRU  - Least Recently Used\n");
+    printf("1. FIFO    - First In First Out\n");
+    printf("2. LRU     - Least Recently Used\n");
+    printf("3. Optimal - Optimal Page Replacement\n");
+    printf("4. Compare All Algorithms\n");
 
     return read_integer(
         "Enter your choice: ",
         1,
-        2,
+        4,
         choice
     );
 }
